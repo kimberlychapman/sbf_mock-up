@@ -181,17 +181,19 @@
 
     #vid,
     #vid img{
-        height:300px;
-        width:400px;
-        margin-top:120px;
-        margin-left:-45px;
+        height:375px;
+        width:500px;
+        margin-top:100px;
+        margin-left:-60px;
+        border-radius:5px;
     }
     #vid img{
         box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
     }
 
     #middle{
-        height:700px;
+        height:630px;
         width: 100%;
         /* background-image: yellow; */
         position:absolute;
@@ -204,7 +206,7 @@
         /* align-items:center; */
         /* display: flex;
         flex-direction: row; */
-        border-bottom:solid 2px black;
+        /* border-bottom:solid 2px black; */
     }
     #mid-title{
         font-size:28pt;
@@ -237,7 +239,7 @@
         /* background-color: yellow; */
         /* margin-left:20px; */
         margin-right:50px;
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+        /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
         border-radius:10px;
     }
     #about-pic img{
@@ -255,31 +257,45 @@
     #bond-data{
         height:700px;
         width: 100%;
-        background-color: #e6e6e6;
+        background-color:rgb(245, 245, 245, 0.3);
+        /* background-image: linear-gradient(to bottom right, gainsboro, white); */
         position:absolute;
-        top:1400px;
+        top:1330px;
         left:0px;
         z-index:1;
         display:flex;
         flex-direction: column;
-        justify-content: center;
-        align-items:center;
+        /* justify-content: center; */
+        /* align-items:center; */
         font-family: 'Archivo Narrow', sans-serif;
+        /* border-top:2px solid green; */
     }
     #bond-title{
-        font-size:28pt;
+        font-size:32pt;
         font-weight: bold;
         color: rgb(5, 107, 167);
-        height:60px;
-        width:600px;
-        margin-top:-200px;
-        margin-left:auto;
-        margin-right:auto;
-        /* align-items: center; */
-        /* border:solid 2px red; */
-        text-align:center;
+        height:180px;
+        width:450px;
+        margin-top:100px;
+        margin-left:10%;
+        /* margin-right:auto; */
+        padding-top:45px;
+        /* float:left; */
         font-family: 'Archivo Narrow', sans-serif;
-        /* font-family: 'SF UI Text Regular'; */
+        text-align:center;
+        /* border:solid 2px magenta; */
+        border-radius: 10px;
+        background-color: white;
+        z-index:3;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #capital{
+        font-size: 16pt;
+        color: rgb(60, 80, 90);
+        text-transform: capitalize;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-weight: bolder;
+        
     }
     #counter,
     #bond-stats{
@@ -290,6 +306,9 @@
         height:120px;
         border-bottom:solid 2px blue;
         text-align:center;
+        /* margin-left:10%; */
+        margin-top:-120px;
+        /* margin-right:auto; */
         justify-content: center;
         /* margin-left:auto;
         margin-right:auto; */
@@ -298,50 +317,82 @@
     /* .counter-value:before {
         content: "$";
       } */
-
+#col1,
+#col2,
+#col3{
+    font-size: 38pt;
+    line-height: 2em;
+    text-align: center;
+    padding: 17px 0;
+    padding-top:100px;
+    /* margin-right:80px; */
+    font-family: 'Archivo Narrow', sans-serif;
+    height:400px;
+    width:370px;
+    border:solid 2px black;
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+}
       .money,
       .passed,
       .categories {
-        font-size: 42pt;
+        font-size: 38pt;
         line-height: 2em;
         text-align: center;
         padding: 17px 0;
-        margin-right:80px;
+        padding-top:100px;
+        /* margin-right:80px; */
         font-family: 'Archivo Narrow', sans-serif;
+        height:100px;
+        width:370px;
+        /* border:solid 2px black; */
       }
       .money:before{
           content:'$';
       }
-      
-      #value-1{
-        font-family: 'Archivo Narrow', sans-serif;
+      .data-detail{
+        content:"  Available";
+        font-size: 24pt;
       }
+    
       /* .counter-value:before {
         content: "hey...";
       } */
-      
-      .counter-value:after {
-        /* content: "%"; */
-        /* display: block; */
-        text-transform: none;
-        font-size: 16px;
-        line-height: 1.2em;
-      }
-      #value-1:before{
-          content:"$"
-      }
-      .money:after{
+    
+  
+      /* .money:after{
           content:"  Available";
           font-size: 24pt;
-      }
-      .passed:after{
+      } */
+      /* .passed:after{
           content:"  Bonds Passed";
           font-size: 24pt;
-      }
-      .categories:after{
+      } */
+      /* .categories:after{
           content:"  Bond Categories";
           font-size: 24pt;
-      }
-      .counter-value[count]{
-        font-family: 'Archivo Narrow', sans-serif;
+      } */
+    .representations{
+        height:400px;
+        width:100%;
+        border-bottom:dotted 3px fuchsia;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #map,
+    #circle-graph,
+    #horizontal{
+        height:400px;
+        width:400px;
+        border: solid 2px black;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    #map img{
+        height:275px;
+        width:400px;
+        border:dashed 2px lime;
+        /* margin-top:63px; */
     }
