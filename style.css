@@ -385,7 +385,7 @@
       transform:scale(1.125);
       }
       #highlight{
-        height:750px;
+        height:700px;
         width: 100%;
         background-color:rgb(245, 245, 245, 0.3);
         /* background-image: linear-gradient(to bottom right, gainsboro, white); */
@@ -398,7 +398,7 @@
         /* justify-content: center; */
         /* align-items:center; */
         font-family: 'Archivo Narrow', sans-serif;
-        /* border-bottom:2px solid green; */
+        border-bottom:2px solid green;
     }
     #bond-highlight,
     #highlight-photo{
@@ -472,4 +472,65 @@
     /* border: solid 2px red; */
  
     /* margin-top:20px; */
+}
+#explore{
+    background-image: linear-gradient(to right, rgb(5, 107, 167) , #0790df);
+    height:460px;
+    width: 100%;
+    position:absolute;
+    top:2780px;
+    left:0px;
+    z-index:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    /* border-bottom:2px solid green; */
+    /* margin-bottom:100px; */
+}
+#ready{
+    height:100px;
+    width:100%;
+    text-align: center;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size:42pt;
+    color: #29363d;
+}
+#tours{
+    height:60px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:40%;
+    margin-left:30%;
+    margin-right: 30%;
+    /* border:solid 2px orange; */
+}
+#mini,
+#full{
+    width:30%;
+    margin-left:20px;
+    margin-right:20px;
+    /* border:solid 2px blueviolet; */
+    text-align:center;
+    line-height:60px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size:16pt;
+    color: #29363d;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(248, 248, 255, 0.8), rgb(255, 255, 255, 0.8));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#footer{
+    height:50px;
+    width:100%;
+    background-color: white;
+    position:absolute;
+    top:3240px;
+    left:0px;
+}
+#mini:hover,
+#full:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
 }
